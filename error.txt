@@ -1,0 +1,7 @@
+Goal:         "action": "A string starting with an active verb (e.g. read_code script.py, run_code test.py, write hello.py)",\
+Action: read_pdf
+Result: [Execute] PDF Reader bypass.
+Action: analyze
+Result: [Execute] Analysis nominal.
+Action: read_code
+Result: [Execute Error] No filename provided.

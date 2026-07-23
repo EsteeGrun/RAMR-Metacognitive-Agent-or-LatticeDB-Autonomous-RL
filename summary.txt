@@ -1,0 +1,7 @@
+Goal:         Respond ONLY in valid JSON format with three keys:\
+Action: analyze
+Result: [Execute] Analysis nominal.
+Action: search_memory goal
+Result: [Execute] Memory ping.
+Action: analyze memory
+Result: [Execute] Analysis nominal.

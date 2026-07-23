@@ -1,0 +1,6 @@
+Node_ID,Tool_Name,Execution_Time_ms,Confidence_Score,Status
+1,query_arxiv,1205,0.95,SUCCESS
+2,read_pdf,3410,0.88,SUCCESS
+3,analyze,,0.45,FAILED
+4,write,850,0.92,SUCCESS
+5,run_code,5200,0.81,ERR_TIMEOUT

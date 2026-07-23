@@ -1,0 +1,69 @@
+Goal: Search ArXiv for papers on formal verification of reinforcement learning, download the best result, and read the PDF to find the authors.
+Initial State: No environmental state provided.
+History:
+Action Taken: query_arxiv formal verification reinforcement learning | Observation: [Execute: ArXiv] Successfully downloaded 'Value_Bonuses_using_Ensemble_Errors_for_Exploration_in_Reinforcement_Learning.pdf'.
+Title: Value Bonuses using Ensemble Errors for Exploration in Reinforcement Learning
+Authors: Abdul Wahab, Raksha Kumaraswamy, Martha White
+Abstract: Optimistic value estimates provide one mechanism for directed exploration in reinforcement learning (RL). The agent acts greedily with respect to an estimate of the value plus what can be seen as a value bonus. The value bonus can be learned by estimating a value function on reward bonuses, propagating local uncertainties around rewards. However, this approach only increases the value bonus for an action retroactively, after seeing a higher reward bonus from that state and action. Such an approach does not encourage the agent to visit a state and action for the first time. In this work, we int... [TRUNCATED]
+Alternative papers found: 'Causal-Paced Deep Reinforcement Learning' and 'Exploring Hierarchy-Aware Inverse Reinforcement Learning'.
+Action Taken: read_pdf Value_Bonuses_using_Ensemble_Errors_for_Exploration_in_Reinforcement_Learning.pdf | Observation: [Execute: PDF Reader] Successfully read 2 pages of 'Value_Bonuses_using_Ensemble_Errors_for_Exploration_in_Reinforcement_Learning.pdf'.
+Contents:
+Reinforcement Learning Journal 2025
+ Cover Page
+Value Bonuses using Ensemble Errors
+for Exploration in Reinforcement Learning
+Abdul Wahab, Raksha Kumaraswamy, Martha White
+Keywords: Reinforcement Learning, Exploration, Value bonuses, Ensembles, Uncertainty
+estimates
+Summary
+Optimistic value estimation can be useful to direct exploration and improve sample effi-
+ciency in Reinforcement Learning. Despite many such methods in literature, simpler, undi-
+rected approaches like ϵ-greedy still continue to be widely used. One potential reason for
+this is that many existing methods can be onerous to use as they may not be compatible
+with the base learning algorithm, or can be hard-to-use as many design choices need to be
+made to make them effective in practice. This paper proposes a simple approach to address
+these limitations.
+Building on ideas that utilize an ensemble for optimistic value estima-
+tion, this work proposes an algorithm called Value Bonuses using Ensemble Errors (VBE)
+that is easy to use and compatible with any base Reinforcement Learning algorithm, with
+a small additional computational foot-print. VBE’s similarity and difference to existing ap-
+proaches is discussed, and the algorithm is evaluated extensively. Our code is available at:
+https://github.com/mirzaabdulwahab1612/VBE
+Contribution(s)
+1. Proposes a new approach for estimating Value Bonuses using Ensemble Errors that allows
+for first-visit optimism and deep exploration.
+Context:
+Many prior works utilize the idea of value bonuses to estimate optimistic val-
+ues for exploration (Osband et al., 2019). Typically, many estimate an additional value
+function that propagates reward bonuses in order to estimate the value bonus (Burda et al.,
+2019). This work proposes a variant of value bonuses that does not rely on propagating ad-
+ditional reward bonuses; this allows for desirable features like first-visit optimism. We show
+our framework allows for Optimistic Initial Values with high probability. Additionally, the
+value bonuses have a similar timescale of learning as the main value function, therefore,
+potentially allowing for deep exploration.
+2. Provides insight into how our proposed value bonuses are similar to and different from some
+relevant widely-used approaches.
+Context: In specific, we contrast how the proposed bonuses capture MDP-specific prop-
+erties like transition dynamics, unlike those of RND (Burda et al., 2019). Additionally, we
+highlight the similarity between quantities estimated by the proposed algorithm and BDQN
+(Osband et al., 2019), despite the difference that BDQN utilizes a Thompson sampling ap-
+proach to induce optimism.
+3. Empirically evaluate the utility of the proposed value bonuses for inducing exploration in
+classic-control problems, and demonstrate scalability through Atari.
+Context:
+We demonstrate how existing methods lack first-visit optimism in a controlled
+setting designed to test state coverage. We show that the proposed algorithm can extend
+to more complex environments like Atari without design choices that alter the underlying
+algorithm.
+arXiv:2602.12375v1  [cs.LG]  12 Feb 2026
+
+Value Bonuses using Ensemble Errors for Exploration in Reinforcement Learning
+Value Bonuses using Ensemble Errors
+for Exploration in Reinforcement Learning
+Abdul Wahab1, Raksha Kumaraswamy2, Martha White1,3
+{wahab1, whitem}@ualberta.ca,
+raksha.kumaraswamy@sony.com
+1Department of Computing Science, University of Alberta, Canada
+2Sony AI
+3Alberta Machine Intelligence ...
+[TRUNCATED]

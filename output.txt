@@ -1,0 +1,3 @@
+Goal:         Do not try to read or run a file before you have written it.\
+Action: extract
+Result: [Execute] Extraction complete.

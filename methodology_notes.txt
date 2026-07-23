@@ -1,0 +1,1 @@
+We introduce a cross-domain behavioural assay of monitoring-control coupling in LLMs, grounded in the Nelson and Narens (1990) metacognitive framework. The battery comprises 524 items across six cognitive domains, each grounded in an established experimental paradigm. Tasks T1–T5 were pre-registered on OSF prior to data collection; T6 was added as an exploratory extension.
