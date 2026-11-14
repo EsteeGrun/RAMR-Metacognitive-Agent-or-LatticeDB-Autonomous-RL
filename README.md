@@ -4,7 +4,7 @@
 [![Ollama](https://img.shields.io/badge/Ollama-Llama%203-black.svg)](https://ollama.ai/)
 [![Database](https://img.shields.io/badge/Database-LatticeDB%20(Vector--Graph)-orange.svg)]()
 
-This repository contains the implementation of **Retrieval-Augmented Memory Routing (RAMR)**, a hybrid vector-graph architecture designed to track and mitigate behavioral drift in autonomous Large Language Model (LLM) orchestrators. 
+This repository contains the implementation of **Representation Aware Memory Routing (RAMR)**, a hybrid vector-graph architecture designed to track and mitigate behavioral drift in autonomous Large Language Model (LLM) orchestrators. 
 
 By unifying high-dimensional semantic search with chronological graph traversal, this system enables an agent to evaluate its own historical reasoning trajectories and autonomously self-correct *before* committing to a harmful or degraded operational state.
 
